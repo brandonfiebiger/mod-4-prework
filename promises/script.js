@@ -1,9 +1,9 @@
 const testNum = num => {
   return new Promise((resolve, reject) => {
     if (num > 10) {
-      return resolve(num + ' is greater than ten good job');
+      resolve(num + ' is greater than ten good job');
     } else {
-      return reject(num + ' is less than ten try again')
+      reject(num + ' is less than ten try again')
     }
   })
 }
